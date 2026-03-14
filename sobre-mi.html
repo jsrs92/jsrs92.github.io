@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>morena.dev | Sobre mí</title>
+  <meta name="description" content="Conocé al desarrollador detrás de los sistemas. Experiencia en Python, SQLite y Tkinter para pequeños y medianos negocios." />
+  <link rel="stylesheet" href="css/styles.css" />
+  <link rel="icon" type="image/png" href="images/icons/icono.png" />
+</head>
+<body>
+
+  <!-- ===== NAVBAR ===== -->
+  <nav class="navbar">
+    <a href="index.html" class="navbar-brand">
+    <img src="images/logo/logo.png" alt="Logo" style="height: 90px; width: auto;" />
+  </a>
+    <ul class="navbar-links">
+      <li><a href="index.html">Inicio</a></li>
+      <li><a href="proyectos.html">Proyectos</a></li>
+      <li><a href="sobre-mi.html">Sobre mí</a></li>
+      <li><a href="contacto.html" class="navbar-cta">Contactar</a></li>
+    </ul>
+    <button class="hamburger" id="hamburger" aria-label="Abrir menú">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <ul class="mobile-menu" id="mobile-menu">
+    <li><a href="index.html">Inicio</a></li>
+    <li><a href="proyectos.html">Proyectos</a></li>
+    <li><a href="sobre-mi.html">Sobre mí</a></li>
+    <li><a href="contacto.html">Contactar</a></li>
+  </ul>
+
+  <main>
+
+    <!-- ===== PAGE HEADER ===== -->
+    <div class="page-header">
+      <div class="container">
+        <h1>Sobre <span class="accent">mí</span></h1>
+        <p>El desarrollador detrás de los sistemas</p>
+      </div>
+    </div>
+
+    <!-- ===== CONTENIDO PRINCIPAL ===== -->
+    <section class="section" style="padding-top: 0;">
+      <div class="container">
+
+        <!-- Intro / Bio -->
+        <div style="display: grid; grid-template-columns: 1fr 2fr; gap: 4rem; align-items: start; margin-bottom: 4rem;">
+
+          <!-- Avatar -->
+          <div style="text-align: center;">
+            <div style="width: 180px; height: 180px; border-radius: 50%; background: linear-gradient(135deg, #1e293b, #0f2942); border: 3px solid var(--color-accent); display: flex; align-items: center; justify-content: center; font-size: 5rem; margin: 0 auto 1.5rem;">
+              👨‍💻
+            </div>
+            <h2 style="font-size: 1.3rem;">Jesmar Rojas</h2>
+            <p style="color: var(--color-accent); font-size: 0.95rem; margin-bottom: 0.5rem;">Programador</p>
+            <p style="color: var(--color-muted); font-size: 0.85rem;">📍 Argentina</p>
+          </div>
+
+          <!-- Bio -->
+          <div>
+            <h2 style="font-size: 1.8rem; margin-bottom: 1rem;">
+              Soluciones reales para <span class="accent">negocios reales</span>
+            </h2>
+            <p style="color: var(--color-muted); margin-bottom: 1.25rem; font-size: 1.05rem; line-height: 1.8;">
+              Soy un desarrollador freelancer especializado en crear sistemas de gestión de escritorio para pequeños y medianos negocios.
+              Me enfoco en entender el problema real de cada cliente y construir una solución práctica, simple de usar y fácil de mantener.
+            </p>
+            <p style="color: var(--color-muted); margin-bottom: 1.25rem; font-size: 1.05rem; line-height: 1.8;">
+              Desarrollo sistemas rápidos, estables y seguros. Pensados para que cualquier empleado pueda usarlos sin complicaciones y funcionando localmente.
+            </p>
+            <p style="color: var(--color-muted); font-size: 1.05rem; line-height: 1.8;">
+              Cada proyecto es desarrollado en estrecha comunicación con el cliente, asegurando que el sistema resuelva exactamente lo que necesita y que el equipo pueda usarlo desde el primer día.
+            </p>
+          </div>
+        </div>
+
+
+
+        <!-- Forma de trabajo -->
+        <div style="background: var(--color-bg-card); border: 1px solid var(--color-border); border-radius: var(--radius); padding: 2.5rem; margin-bottom: 4rem;">
+          <h2 class="section-title" style="margin-bottom: 0.5rem;">Cómo trabajo</h2>
+          <div class="divider"></div>
+          <div style="display: grid; grid-template-columns: repeat(4, 1fr); gap: 1.5rem; margin-top: 1.5rem;">
+
+            <div style="text-align: center;">
+              <div style="font-size: 2rem; margin-bottom: 0.75rem;">🎯</div>
+              <h3 style="font-size: 1rem; margin-bottom: 0.5rem;">1. Comprender</h3>
+              <p style="color: var(--color-muted); font-size: 0.9rem;">Escucho y analizo el problema real del negocio antes de escribir una sola línea de código.</p>
+            </div>
+
+            <div style="text-align: center;">
+              <div style="font-size: 2rem; margin-bottom: 0.75rem;">📋</div>
+              <h3 style="font-size: 1rem; margin-bottom: 0.5rem;">2. Planificar</h3>
+              <p style="color: var(--color-muted); font-size: 0.9rem;">Defino el alcance del sistema y las funciones necesarias junto al cliente.</p>
+            </div>
+
+            <div style="text-align: center;">
+              <div style="font-size: 2rem; margin-bottom: 0.75rem;">⚙️</div>
+              <h3 style="font-size: 1rem; margin-bottom: 0.5rem;">3. Desarrollar</h3>
+              <p style="color: var(--color-muted); font-size: 0.9rem;">Construyo el sistema con revisiones periódicas para asegurar que va en la dirección correcta.</p>
+            </div>
+
+            <div style="text-align: center;">
+              <div style="font-size: 2rem; margin-bottom: 0.75rem;">✅</div>
+              <h3 style="font-size: 1rem; margin-bottom: 0.5rem;">4. Entregar</h3>
+              <p style="color: var(--color-muted); font-size: 0.9rem;">Instalo el sistema, capacito al equipo y ofrezco soporte post-entrega.</p>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- CTA -->
+        <div style="text-align: center;">
+          <a href="contacto.html" class="btn btn-primary" style="font-size: 1.05rem; padding: 0.9rem 2.5rem;">Trabajemos juntos →</a>
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <footer>
+    <div class="container">
+      <ul class="footer-links">
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="proyectos.html">Proyectos</a></li>
+        <li><a href="sobre-mi.html">Sobre mí</a></li>
+        <li><a href="contacto.html">Contacto</a></li>
+      </ul>
+      <p>&copy; <span id="current-year"></span> morenda.dev — Desarrollo de Software</p>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+
+  <style>
+    @media (max-width: 768px) {
+      div[style*="grid-template-columns: 1fr 2fr"] {
+        grid-template-columns: 1fr !important;
+        gap: 2rem !important;
+      }
+      div[style*="grid-template-columns: repeat(4, 1fr)"] {
+        grid-template-columns: repeat(2, 1fr) !important;
+      }
+    }
+    @media (max-width: 480px) {
+      div[style*="grid-template-columns: repeat(4, 1fr)"],
+      div[style*="grid-template-columns: repeat(3, 1fr)"] {
+        grid-template-columns: 1fr !important;
+      }
+    }
+  </style>
+
+</body>
+</html>

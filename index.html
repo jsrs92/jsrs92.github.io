@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>morena.dev | Inicio</title>
+  <meta name="description" content="Soluciones de software a medida para pequeños negocios. Sistemas de gestión de ventas, stock, clientes, turnos y más. Desarrollados con Python." />
+  <link rel="stylesheet" href="css/styles.css" />
+  <link rel="icon" type="image/png" href="images/icons/icono.png" />
+</head>
+<body>
+
+  <!-- ===== NAVBAR ===== -->
+  <nav class="navbar">
+    <a href="index.html" class="navbar-brand">
+      <img src="images/logo/logo.png" alt="Logo" style="height: 90px; width: auto;" />
+    </a>
+    <ul class="navbar-links">
+      <li><a href="index.html">Inicio</a></li>
+      <li><a href="proyectos.html">Proyectos</a></li>
+      <li><a href="sobre-mi.html">Sobre mí</a></li>
+      <li><a href="contacto.html" class="navbar-cta">Contactar</a></li>
+    </ul>
+    <button class="hamburger" id="hamburger" aria-label="Abrir menú">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <!-- Menú mobile -->
+  <ul class="mobile-menu" id="mobile-menu">
+    <li><a href="index.html">Inicio</a></li>
+    <li><a href="proyectos.html">Proyectos</a></li>
+    <li><a href="sobre-mi.html">Sobre mí</a></li>
+    <li><a href="contacto.html">Contactar</a></li>
+  </ul>
+
+  <main>
+
+    <!-- ===== HERO ===== -->
+    <section class="hero">
+      <div class="container">
+        <div class="hero-badge">
+          <span></span> Disponible para nuevos proyectos
+        </div>
+        <h1>Software a medida<br />para pequeños <span class="accent">negocios</span> que piensan en <span class="accent">grande</span></h1>
+        <p>
+          Desarrollo sistemas de gestión personalizados para pequeñas y medianas empresas, negocios y emprendimientos.
+          Soluciones prácticas, simples de usar y diseñadas para que tu negocio funcione mejor.
+        </p>
+        <div class="hero-buttons">
+          <a href="proyectos.html" class="btn btn-primary">Ver proyectos →</a>
+          <a href="contacto.html" class="btn btn-outline">Contactarme</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== SERVICIOS ===== -->
+    <section class="section" style="background: var(--color-bg-card); border-top: 1px solid var(--color-border); border-bottom: 1px solid var(--color-border);">
+      <div class="container">
+        <h2 class="section-title">¿Qué puedo hacer por tu negocio?</h2>
+        <div class="divider"></div>
+        <p class="section-subtitle">Sistemas de gestión pensados para el día a día.</p>
+        <div class="grid-3">
+
+          <div class="service-card">
+            <span class="service-icon">🛒</span>
+            <h3>Gestión de Ventas</h3>
+            <p>Registrá ventas, emití tickets y llevá el control de tus ingresos sin complicaciones.</p>
+          </div>
+
+          <div class="service-card">
+            <span class="service-icon">📦</span>
+            <h3>Control de Stock</h3>
+            <p>Mantené tu inventario actualizado con alertas de stock mínimo y movimientos de mercadería.</p>
+          </div>
+
+          <div class="service-card">
+            <span class="service-icon">👥</span>
+            <h3>Gestión de Clientes</h3>
+            <p>Base de datos de clientes, historial de compras y seguimiento de cuentas corrientes.</p>
+          </div>
+
+          <div class="service-card">
+            <span class="service-icon">📅</span>
+            <h3>Turnos y Agenda</h3>
+            <p>Administrá turnos y citas de tu negocio de forma simple y visual.</p>
+          </div>
+
+          <div class="service-card">
+            <span class="service-icon">🔧</span>
+            <h3>Reparaciones y Servicios</h3>
+            <p>Seguimiento de órdenes de trabajo, presupuestos y estado de cada reparación.</p>
+          </div>
+
+          <div class="service-card">
+            <span class="service-icon">📊</span>
+            <h3>Reportes y Estadísticas</h3>
+            <p>Informes claros de ventas, gastos y rendimiento para tomar mejores decisiones.</p>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== PROYECTOS DESTACADOS ===== -->
+    <section class="section">
+      <div class="container">
+        <h2 class="section-title">Proyectos Realizados</h2>
+        <div class="divider"></div>
+        <p class="section-subtitle">Algunos sistemas que ya están funcionando en negocios reales</p>
+
+        <div class="grid-3">
+
+          <div class="project-card">
+            <div class="project-card-img-placeholder">🛒</div>
+            <div class="project-card-body">
+              <span class="project-card-tag">Ventas & Stock</span>
+              <h3 class="project-card-title">Clean Master</h3>
+              <p class="project-card-desc">Gestión completa de ventas, inventario y caja para comercio minorista especializado en productos de higiense y limpieza. Incluye reportes diarios y alertas de stock.</p>
+              <a href="proyectos.html" class="btn btn-outline" style="margin-top: auto; padding: 0.5rem 1rem; font-size: 0.9rem;">Ver detalle</a>
+            </div>
+          </div>
+
+          <div class="project-card">
+            <div class="project-card-img-placeholder">🔧</div>
+            <div class="project-card-body">
+              <span class="project-card-tag">Servicios Técnicos</span>
+              <h3 class="project-card-title">Taller de bicicletas BIKERLP</h3>
+              <p class="project-card-desc">Control de órdenes de trabajo, presupuestos, ventas de repuestos y seguimiento de reparaciones para taller de bicicletas.</p>
+              <a href="proyectos.html" class="btn btn-outline" style="margin-top: auto; padding: 0.5rem 1rem; font-size: 0.9rem;">Ver detalle</a>
+            </div>
+          </div>
+
+          <div class="project-card">
+            <div class="project-card-img-placeholder">📅</div>
+            <div class="project-card-body">
+              <span class="project-card-tag">Agenda & Turnos</span>
+              <h3 class="project-card-title">Barberia BROSS</h3>
+              <p class="project-card-desc">Agenda de citas y turnos para barberia. Gestión de clientes integrada.</p>
+              <a href="proyectos.html" class="btn btn-outline" style="margin-top: auto; padding: 0.5rem 1rem; font-size: 0.9rem;">Ver detalle</a>
+            </div>
+          </div>
+
+        </div>
+
+        <div style="text-align: center; margin-top: 3rem;">
+          <a href="proyectos.html" class="btn btn-primary">Ver todos los proyectos →</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== CTA FINAL ===== -->
+    <section class="section" style="background: linear-gradient(135deg, #1b1b1d 0%, #111111 100%); border-top: 1px solid var(--color-border);">
+      <div class="container" style="text-align: center;">
+        <h2 class="section-title" style="font-size: 2.2rem;">¿Tenés un negocio y necesitás<br />un sistema a medida?</h2>
+        <p style="color: var(--color-muted); font-size: 1.1rem; max-width: 520px; margin: 1rem auto 2.5rem;">
+          Contame qué necesitás y te doy una solución práctica, simple de usar y pensada para tu negocio.
+        </p>
+        <a href="contacto.html" class="btn btn-primary" style="font-size: 1.05rem; padding: 0.9rem 2.5rem;">Hablar del proyecto →</a>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ===== FOOTER ===== -->
+  <footer>
+    <div class="container">
+      <ul class="footer-links">
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="proyectos.html">Proyectos</a></li>
+        <li><a href="sobre-mi.html">Sobre mí</a></li>
+        <li><a href="contacto.html">Contacto</a></li>
+      </ul>
+      <p>&copy; <span id="current-year"></span> morenda.dev — Desarrollo de Software</p>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>morena.dev | Contacto</title>
+  <meta name="description" content="Contactá al desarrollador para hablar de tu proyecto. Formulario de contacto, email y WhatsApp disponibles." />
+  <link rel="stylesheet" href="css/styles.css" />
+  <link rel="icon" type="image/png" href="images/icons/icono.png" />
+</head>
+<body>
+
+  <!-- ===== NAVBAR ===== -->
+  <nav class="navbar">
+    <a href="index.html" class="navbar-brand">
+    <img src="images/logo/logo.png" alt="Logo" style="height: 70px; width: auto;" />
+  </a>
+    <ul class="navbar-links">
+      <li><a href="index.html">Inicio</a></li>
+      <li><a href="proyectos.html">Proyectos</a></li>
+      <li><a href="sobre-mi.html">Sobre mí</a></li>
+      <li><a href="contacto.html" class="navbar-cta">Contactar</a></li>
+    </ul>
+    <button class="hamburger" id="hamburger" aria-label="Abrir menú">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <ul class="mobile-menu" id="mobile-menu">
+    <li><a href="index.html">Inicio</a></li>
+    <li><a href="proyectos.html">Proyectos</a></li>
+    <li><a href="sobre-mi.html">Sobre mí</a></li>
+    <li><a href="contacto.html">Contactar</a></li>
+  </ul>
+
+  <main>
+
+    <!-- ===== PAGE HEADER ===== -->
+    <div class="page-header">
+      <div class="container">
+        <h1>Hablemos de tu <span class="accent">proyecto</span></h1>
+        <p>Contame qué necesitás y te respondo a la brevedad</p>
+      </div>
+    </div>
+
+    <!-- ===== CONTACTO ===== -->
+    <section class="section" style="padding-top: 0;">
+      <div class="container">
+        <div style="display: grid; grid-template-columns: 1fr 1.6fr; gap: 4rem; align-items: start;">
+
+          <!-- Info de contacto -->
+          <div>
+            <h2 style="font-size: 1.5rem; margin-bottom: 1rem;">Información de contacto</h2>
+            <p style="color: var(--color-muted); margin-bottom: 2.5rem; line-height: 1.7;">
+              Podés escribirme por el formulario o contactarme directamente por cualquiera de estos medios. Te respondo en menos de 24 horas.
+            </p>
+
+            <!-- Email -->
+            <div style="display: flex; align-items: center; gap: 1rem; margin-bottom: 1.5rem; padding: 1.25rem; background: var(--color-bg-card); border: 1px solid var(--color-border); border-radius: var(--radius);">
+              <div style="font-size: 1.5rem;">📧</div>
+              <div>
+                <p style="font-size: 0.8rem; color: var(--color-muted); margin-bottom: 0.2rem;">Email</p>
+                <!-- REEMPLAZAR con tu email real -->
+                <a href="mailto:tu@email.com" style="color: var(--color-accent); font-weight: 500;">rojasjesmar.jbs@outlook.com</a>
+              </div>
+            </div>
+
+            <!-- WhatsApp -->
+            <div style="display: flex; align-items: center; gap: 1rem; margin-bottom: 1.5rem; padding: 1.25rem; background: var(--color-bg-card); border: 1px solid var(--color-border); border-radius: var(--radius);">
+              <div style="font-size: 1.5rem;">💬</div>
+              <div>
+                <p style="font-size: 0.8rem; color: var(--color-muted); margin-bottom: 0.2rem;">Redes Sociales</p>
+                <!-- REEMPLAZAR con tu número real (sin espacios, con código de país) -->
+                <a href="https://www.instagram.com/" target="_blank" rel="noopener" style="color: var(--color-accent); font-weight: 500;">Instagram</a>
+              </div>
+            </div>
+
+            <!-- Ubicación -->
+            <div style="display: flex; align-items: center; gap: 1rem; padding: 1.25rem; background: var(--color-bg-card); border: 1px solid var(--color-border); border-radius: var(--radius);">
+              <div style="font-size: 1.5rem;">📍</div>
+              <div>
+                <p style="font-size: 0.8rem; color: var(--color-muted); margin-bottom: 0.2rem;">Ubicación</p>
+                <p style="color: var(--color-text); font-weight: 500;">La Plata, Buenos Aires</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Formulario -->
+          <div style="background: var(--color-bg-card); border: 1px solid var(--color-border); border-radius: var(--radius); padding: 2.5rem;">
+            <h2 style="font-size: 1.4rem; margin-bottom: 0.5rem;">Enviame un mensaje</h2>
+            <p style="color: var(--color-muted); font-size: 0.9rem; margin-bottom: 2rem;">Cuanto más detalle, mejor puedo ayudarte.</p>
+
+            <!-- NOTA: El formulario usa mailto: (abre el cliente de email del usuario) -->
+            <!-- En una versión futura se puede conectar a un backend Flask -->
+            <form id="contact-form" action="" method="POST">
+
+              <div class="grid-2">
+                <div class="form-group">
+                  <label for="nombre">Tu nombre *</label>
+                  <input type="text" id="nombre" name="nombre" placeholder="Juan García" required />
+                </div>
+                <div class="form-group">
+                  <label for="email">Tu email *</label>
+                  <input type="email" id="email" name="email" placeholder="juan@ejemplo.com" required />
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label for="negocio">Tipo de negocio</label>
+                <input type="text" id="negocio" name="negocio" placeholder="Ej: Panadería, taller mecánico, consultorio..." />
+              </div>
+
+              <div class="form-group">
+                <label for="asunto">¿Qué necesitás? *</label>
+                <select id="asunto" name="asunto" required>
+                  <option value="" disabled selected>Seleccioná una opción</option>
+                  <option value="Sistema de ventas/caja">Sistema de ventas / caja</option>
+                  <option value="Control de stock">Control de stock</option>
+                  <option value="Gestión de clientes">Gestión de clientes</option>
+                  <option value="Sistema de turnos">Sistema de turnos</option>
+                  <option value="Sistema de reparaciones">Sistema de reparaciones</option>
+                  <option value="Otro">Otro</option>
+                </select>
+              </div>
+
+              <div class="form-group">
+                <label for="mensaje">Mensaje *</label>
+                <textarea id="mensaje" name="mensaje" rows="5" placeholder="Contame brevemente qué problema querés resolver con el sistema..." required></textarea>
+              </div>
+
+              <button type="submit" class="btn btn-primary" style="width: 100%; justify-content: center;">
+                Enviar mensaje →
+              </button>
+
+            </form>
+
+            <p style="color: var(--color-muted); font-size: 0.8rem; text-align: center; margin-top: 1rem;">
+              * Al enviar, se abrirá tu cliente de email con el mensaje listo para enviar.
+            </p>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer>
+    <div class="container">
+      <ul class="footer-links">
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="proyectos.html">Proyectos</a></li>
+        <li><a href="sobre-mi.html">Sobre mí</a></li>
+        <li><a href="contacto.html">Contacto</a></li>
+      </ul>
+      <p>&copy; <span id="current-year"></span> morenda.dev — Desarrollo de Software</p>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+
+  <script>
+    // Formulario con mailto (sin backend)
+    const form = document.getElementById('contact-form');
+    form.addEventListener('submit', function(e) {
+      e.preventDefault();
+      const nombre  = document.getElementById('nombre').value;
+      const email   = document.getElementById('email').value;
+      const negocio = document.getElementById('negocio').value;
+      const asunto  = document.getElementById('asunto').value;
+      const mensaje = document.getElementById('mensaje').value;
+
+      const subject = encodeURIComponent(`Consulta web: ${asunto}`);
+      const body = encodeURIComponent(
+        `Hola, soy ${nombre}.\n\n` +
+        `Email: ${email}\n` +
+        `Negocio: ${negocio || 'No especificado'}\n` +
+        `Necesidad: ${asunto}\n\n` +
+        `Mensaje:\n${mensaje}`
+      );
+
+      // REEMPLAZAR tu@email.com con tu email real
+      window.location.href = `mailto:tu@email.com?subject=${subject}&body=${body}`;
+    });
+  </script>
+
+  <style>
+    @media (max-width: 768px) {
+      div[style*="grid-template-columns: 1fr 1.6fr"] {
+        grid-template-columns: 1fr !important;
+        gap: 2rem !important;
+      }
+    }
+  </style>
+
+</body>
+</html>
